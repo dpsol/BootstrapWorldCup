@@ -137,14 +137,18 @@
       autoplay: false,
       dots: true,
       loop: false,
+      startPosition: 0,
       responsive: {
         0: {
           items: 1
         },
         576: {
-          items: 3
+          items: 2
         },
         768: {
+          items: 3
+        },
+        992: {
           items: 4
         }
       }
