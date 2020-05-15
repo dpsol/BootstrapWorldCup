@@ -921,20 +921,20 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Portfolio
+  # teams
   --------------------------------------------------------------*/
-  .portfolio .portfolio-item {
+  .teams .teams-item {
     margin-bottom: 30px;
   }
   
-  .portfolio #portfolio-flters {
+  .teams #teams-flters {
     padding: 0;
     margin: 0 auto 20px auto;
     list-style: none;
     text-align: center;
   }
   
-  .portfolio #portfolio-flters li {
+  .teams #teams-flters li {
     cursor: pointer;
     display: inline-block;
     padding: 8px 15px 10px 15px;
@@ -948,26 +948,26 @@ body {
     border-radius: 3px;
   }
   
-  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  .teams #teams-flters li:hover, .teams #teams-flters li.filter-active {
     color: #fff;
     background: #428bca;
   }
   
-  .portfolio #portfolio-flters li:last-child {
+  .teams #teams-flters li:last-child {
     margin-right: 0;
   }
   
-  .portfolio .portfolio-wrap {
+  .teams .teams-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(57, 64, 71, 0.6);
+    background: transparent;
   }
   
-  .portfolio .portfolio-wrap::before {
+  .teams .teams-wrap::before {
     content: "";
-    background: rgba(57, 64, 71, 0.6);
+    background: transparent;
     position: absolute;
     left: 0;
     right: 0;
@@ -978,11 +978,11 @@ body {
     opacity: 0;
   }
   
-  .portfolio .portfolio-wrap img {
+  .teams .teams-wrap img {
     transition: all ease-in-out 0.3s;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info {
+  .teams .teams-wrap .teams-info {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -998,13 +998,13 @@ body {
     padding: 20px;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info h4 {
+  .teams .teams-wrap .teams-info h4 {
     font-size: 20px;
     color: #fff;
     font-weight: 600;
   }
   
-  .portfolio .portfolio-wrap .portfolio-info p {
+  .teams .teams-wrap .teams-info p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     text-transform: uppercase;
@@ -1013,12 +1013,12 @@ body {
     font-style: italic;
   }
   
-  .portfolio .portfolio-wrap .portfolio-links {
+  .teams .teams-wrap .teams-links {
     text-align: center;
     z-index: 4;
   }
   
-  .portfolio .portfolio-wrap .portfolio-links a {
+  .teams .teams-wrap .teams-links a {
     color: #fff;
     margin: 0 5px 0 0;
     font-size: 28px;
@@ -1026,19 +1026,19 @@ body {
     transition: 0.3s;
   }
   
-  .portfolio .portfolio-wrap .portfolio-links a:hover {
+  .teams .teams-wrap .teams-links a:hover {
     color: #6aa3d5;
   }
   
-  .portfolio .portfolio-wrap:hover::before {
+  .teams .teams-wrap:hover::before {
     opacity: 1;
   }
   
-  .portfolio .portfolio-wrap:hover img {
+  .teams .teams-wrap:hover img {
     transform: scale(1.2);
   }
   
-  .portfolio .portfolio-wrap:hover .portfolio-info {
+  .teams .teams-wrap:hover .teams-info {
     opacity: 1;
   }
   
@@ -1427,24 +1427,24 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Portfolio Details
+  # teams Details
   --------------------------------------------------------------*/
-  .portfolio-details {
+  .teams-details {
     padding-top: 40px;
   }
   
-  .portfolio-details .portfolio-title {
+  .teams-details .teams-title {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   
-  .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  .teams-details .teams-details-carousel .owl-nav, .teams-details .teams-details-carousel .owl-dots {
     margin-top: 5px;
     text-align: center;
   }
   
-  .portfolio-details .portfolio-details-carousel .owl-dot {
+  .teams-details .teams-details-carousel .owl-dot {
     display: inline-block;
     margin: 0 5px;
     width: 12px;
@@ -1453,27 +1453,27 @@ body {
     background-color: #ddd !important;
   }
   
-  .portfolio-details .portfolio-details-carousel .owl-dot.active {
+  .teams-details .teams-details-carousel .owl-dot.active {
     background-color: #428bca !important;
   }
   
-  .portfolio-details .portfolio-info ul {
+  .teams-details .teams-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
   }
   
-  .portfolio-details .portfolio-info ul li + li {
+  .teams-details .teams-info ul li + li {
     margin-top: 10px;
   }
   
-  .portfolio-details .portfolio-info p {
+  .teams-details .teams-info p {
     font-size: 15px;
     padding: 15px 0 0 0;
   }
   
   @media (max-width: 992px) {
-    .portfolio-details .portfolio-info {
+    .teams-details .teams-info {
       padding-top: 20px;
     }
   }

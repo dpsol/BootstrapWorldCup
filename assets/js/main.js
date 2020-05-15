@@ -185,17 +185,17 @@
       offset: '80%'
     });
   
-    // Porfolio isotope and filter
+    // Teams isotope and filter
     $(window).on('load', function() {
-      var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item'
+      var teamsIsotope = $('.teams-container').isotope({
+        itemSelector: '.teams-item'
       });
   
-      $('#portfolio-flters li').on('click', function() {
-        $("#portfolio-flters li").removeClass('filter-active');
+      $('#teams-flters li').on('click', function() {
+        $("#teams-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
   
-        portfolioIsotope.isotope({
+        teamsIsotope.isotope({
           filter: $(this).data('filter')
         });
       });
@@ -207,18 +207,12 @@
   
     });
   
-    // Portfolio details carousel
-    $(".portfolio-details-carousel").owlCarousel({
+    // teams details carousel
+    $(".teams-details-carousel").owlCarousel({
       autoplay: true,
       dots: true,
       loop: true,
       items: 1
-    });
-  
-    // Initi AOS
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out"
     });
 
   })(jQuery);
