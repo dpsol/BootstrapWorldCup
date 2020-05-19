@@ -962,12 +962,13 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    /* background: rgba(57, 64, 71, 0.6); */
     background: transparent;
   }
   
   .teams .teams-wrap::before {
     content: "";
-    background: transparent;
+    background: rgba(57, 64, 71, 0.6);
     position: absolute;
     left: 0;
     right: 0;
@@ -982,6 +983,10 @@ body {
     transition: all ease-in-out 0.3s;
   }
   
+  .teams .teams-wrap .card-body {
+    margin-top: 15px;
+  }
+
   .teams .teams-wrap .teams-info {
     opacity: 0;
     position: absolute;
