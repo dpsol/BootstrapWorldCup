@@ -921,7 +921,7 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # teams
+  # Teams
   --------------------------------------------------------------*/
   .teams .teams-item {
     margin-bottom: 30px;
@@ -1666,11 +1666,6 @@ body {
     padding: 120px 0;
   }
   
-  /* .forecast .forecast-item {
-    width: 100%;
-    table-layout: auto;
-  } */
-
   .forecast h3 {
     color: #fff;
     font-size: 28px;
@@ -1728,6 +1723,17 @@ body {
   
   .forecast #forecast-flters li:last-child {
     margin-right: 0;
+  }
+
+  /*--------------------------------------------------------------
+  # Forecast
+  --------------------------------------------------------------*/
+  /* .standings .standings-item {
+    align-content: center;
+  } */
+
+  .standings th {
+    text-align: center;
   }
 
   /*--------------------------------------------------------------
