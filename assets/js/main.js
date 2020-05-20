@@ -185,8 +185,9 @@
       offset: '80%'
     });
   
-    // Teams isotope and filter
+    // Isotopes and filters
     $(window).on('load', function() {
+      // Teams isotope and filter
       var teamsIsotope = $('.teams-container').isotope({
         itemSelector: '.teams-item'
       });
@@ -196,6 +197,38 @@
         $(this).addClass('filter-active');
   
         teamsIsotope.isotope({
+          filter: $(this).data('filter')
+        });
+      });
+  
+      // Stadiums isotope and filter
+      var stadiumsIsotope = $('.stadiums-container').isotope({
+        itemSelector: '.stadiums-item'
+      });
+  
+      $('#stadiums-flters li').on('click', function() {
+        $("#stadiums-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+  
+        stadiumsIsotope.isotope({
+          filter: $(this).data('filter')
+        });
+      });
+  
+      // Forecast isotope and filter
+      var forecastIsotope = $('.forecast-container').isotope({
+        itemSelector: '.forecast-item'
+      });
+
+      forecastIsotope.isotope({
+        filter: ".filter-r1"
+      });
+
+      $('#forecast-flters li').on('click', function() {
+        $("#forecast-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+  
+        forecastIsotope.isotope({
           filter: $(this).data('filter')
         });
       });
@@ -215,29 +248,12 @@
       items: 1
     });
 
-  // Stadiums isotope and filter
-  $(window).on('load', function() {
-    var stadiumsIsotope = $('.stadiums-container').isotope({
-      itemSelector: '.stadiums-item'
+    // stadiums details carousel
+    $(".stadiums-details-carousel").owlCarousel({
+      autoplay: true,
+      dots: true,
+      loop: true,
+      items: 1
     });
-
-    $('#stadiums-flters li').on('click', function() {
-      $("#stadiums-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      stadiumsIsotope.isotope({
-        filter: $(this).data('filter')
-      });
-    });
-
-  });
-
-  // stadiums details carousel
-  $(".stadiums-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
 
   })(jQuery);
