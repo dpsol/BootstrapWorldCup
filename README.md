@@ -1,6 +1,9 @@
 # BootstrapWorldCup
 Bosquejo de un sitio web para jugar a pronosticar los resultados de los partidos de la copa mundial de futbol
 
+## Prueba de imagen
+![Estadio](assets/img/estadio.jpg)
+
 Este sitio web utiliza lo siguiente:
 
 animate.css -https://daneden.github.io/animate.css/
